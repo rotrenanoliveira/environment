@@ -1,0 +1,38 @@
+format = '$all'
+
+[username]
+style_user = 'bold #F29F05'
+style_root = 'bold #F29F05'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+
+[line_break]
+disabled = true
+
+[directory]
+read_only = " "
+truncation_length = 2
+truncation_symbol = '…/'
+
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+trim_at = '.dstopic.com'
+disabled = true
+
+[git_branch]
+symbol = " "
+truncation_length = 13
+truncation_symbol = ''
+ignore_branches = ['master', 'main']
+
+[hg_branch]
+symbol = " "
+
+[nodejs]
+format = 'via [ $version](bold green) '
+
+[character]
+success_symbol = '[➜](bold green) '
+error_symbol = '[➜](bold red) '

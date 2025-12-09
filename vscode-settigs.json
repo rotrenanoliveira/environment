@@ -1,0 +1,217 @@
+{
+  // General
+  "files.eol": "\n",
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "security.promptForLocalFileProtocolHandling": false,
+  // Editor
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
+  "editor.rulers": [
+    120
+  ],
+  "editor.fontFamily": "JetBrainsMono NF",
+  "editor.fontLigatures": true,
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "terminal.integrated.fontLigatures.enabled": true,
+  "window.commandCenter": false,
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.editor.labelFormat": "short",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, .npmrc, tsconfig.*, .eslint*, prettier, vite*, nest*",
+    "tailwind.config*": "tailwind.config*, postcss.config*",
+    "next.config*": "next.config*, next-env.d.ts",
+    ".env": ".env*",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  // TypeScript / JavaScript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.formatOnSave": true
+  },
+  // Prisma
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+  // JSON
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Python
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+    },
+    "editor.tabSize": 4,
+  },
+  // Terminal
+  "terminal.integrated.fontFamily": "JetBrainsMono NF",
+  "terminal.integrated.env.osx": {
+    "CW_NEW_SESSION": "1"
+  },
+  // Git
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Symbols / Icons / Folders
+  "symbols.hidesExplorerArrows": false,
+  "symbols.folders.associations": {
+    "auth": "folder-auth",
+    "authentication": "folder-auth",
+    "adapter": "folder-helpers",
+    "adapters": "folder-helpers",
+    "entities": "folder-layout",
+    "application": "folder-app",
+    "apps": "folder-app",
+    "archive": "folder-gray-outline",
+    "domain": "folder-red-outline",
+    "enterprise": "folder-sky",
+    "src": "folder-red-code",
+    "lib": "folder-sky-code",
+    "test": "folder-orange-code",
+    "tests": "folder-orange-code",
+    "error": "folder-red",
+    "errors": "folder-red",
+    "cache": "folder-red-outline",
+    "_errors": "folder-red",
+    "_components": "folder-green-code",
+    "ui": "folder-yellow-code",
+    "infra": "folder-app",
+    "schemas": "folder-purple",
+    "http": "folder-green-outline",
+    "hooks": "folder-purple",
+    "controllers": "folder-yellow-outline",
+    "controller": "folder-yellow-outline",
+    "controle": "folder-yellow-outline",
+    "modelo": "folder-models",
+    "dao": "folder-database",
+    "view": "folder-layout",
+    "web": "folder-blue-outline",
+    "services": "folder-orange-outline",
+    "use-cases": "folder-blue-outline",
+    "repositories": "folder-database",
+    "routes": "folder-router",
+    "templates": "folder-layout",
+    "transactional": "folder-mail",
+    "factories": "folder-providers",
+    "_factories": "folder-providers"
+  },
+  // Symbols / Files
+  "symbols.files.associations": {
+    "*.txt": "text",
+    "*.d.ts": "dts",
+    "*.module.ts": "nest",
+    "*.controller.ts": "code-yellow",
+    "vitest.config.e2e.mts": "vite",
+    "*.e2e-spec.ts": "ts-test"
+  },
+  // Color Theme
+  "workbench.colorTheme": "Vesper ++",
+  // Remove left-side icons
+  "workbench.activityBar.location": "hidden",
+  // Remove bottom status bar
+  "workbench.statusBar.visible": true,
+  // Remove position indicator in the editor's scrollbar
+  "editor.hideCursorInOverviewRuler": true,
+  // Remove horizontal scrollbars
+  "editor.scrollbar.horizontal": "hidden",
+  // Remove vertical scrollbars
+  "editor.scrollbar.vertical": "hidden",
+  // Remove minimap
+  "editor.minimap.enabled": false,
+  // Remove the line number gutter
+  "editor.glyphMargin": false,
+  // Remove code-block folding icon
+  // "editor.folding": false,
+  // Move tabs to be in a single line with window controls
+  "window.titleBarStyle": "custom",
+  // Custom CSS nad JS Loader
+  "vscode_custom_css.imports": [
+    "file:///Users/rotrenanoliveira/custom-vscode.css",
+    "file:///Users/rotrenanoliveira/custom-js.js"
+  ],
+  // Spell Checker
+  "cSpell.language": "en,pt-BR,lorem,en-US,en-GB,pt",
+  "cSpell.userWords": [
+    "encrypter",
+    "extralight",
+    "fastify",
+    "johndoe",
+    "nestjs",
+    "nextjs",
+    "pnpx",
+    "postgresql",
+    "rotrenanoliveira",
+    "saas"
+  ],
+  // Java
+  "[java-properties]": {
+    "editor.formatOnSave": true
+  },
+  "[java]": {
+    "editor.formatOnType": true,
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 4
+  },
+  // Other
+  "update.mode": "manual",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "workbench.sideBar.location": "right",
+  "supermaven.enable": {
+    "*": true
+  },
+  "database-client.autoSync": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "on"
+  },
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "biome.suggestInstallingGlobally": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+}
